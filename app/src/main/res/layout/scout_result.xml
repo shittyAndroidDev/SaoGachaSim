@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_argo"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:paddingTop="60dp"
+    android:rowCount="4">
+
+    <ImageView
+        android:id="@+id/scout_slot0"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot1"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot2"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot3"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot4"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot5"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot6"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot7"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot8"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot9"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/scout_slot10"
+        android:layout_width="90dp"
+        android:layout_height="102dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp"
+        android:scaleType="centerCrop" />
+
+</GridLayout>

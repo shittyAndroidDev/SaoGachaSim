@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_scout">
+
+    <ImageView
+        android:tag="1"
+        android:id="@+id/bannerView"
+        android:layout_width="317dp"
+        android:layout_height="415dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/no_image" />
+
+    <ImageView
+        android:id="@+id/scout2_img"
+        android:layout_width="175dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="16dp"
+        android:tag="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerView"
+        app:srcCompat="@drawable/scout_2" />
+
+    <ImageView
+        android:id="@+id/scout1_img"
+        android:layout_width="175dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="16dp"
+        android:tag="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerView"
+        app:srcCompat="@drawable/scout_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

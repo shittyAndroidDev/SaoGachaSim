@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/banner1"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="1"
+                app:srcCompat="@drawable/b001_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner2"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="2"
+                app:srcCompat="@drawable/b002_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner3"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="3"
+                app:srcCompat="@drawable/b003_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner4"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="4"
+                app:srcCompat="@drawable/b004_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner5"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="5"
+                app:srcCompat="@drawable/b005_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner6"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="6"
+                app:srcCompat="@drawable/b006_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner7"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="7"
+                app:srcCompat="@drawable/b007_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner8"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="8"
+                app:srcCompat="@drawable/b008_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner9"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="9"
+                app:srcCompat="@drawable/b009_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner10"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="10"
+                app:srcCompat="@drawable/b010_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner11"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="11"
+                app:srcCompat="@drawable/b011_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner12"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="12"
+                app:srcCompat="@drawable/b012_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner13"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="13"
+                app:srcCompat="@drawable/b013_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner14"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="14"
+                app:srcCompat="@drawable/b014_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner15"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="15"
+                app:srcCompat="@drawable/b015_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner16"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="16"
+                app:srcCompat="@drawable/b016_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner17"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="17"
+                app:srcCompat="@drawable/b017_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner18"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="18"
+                app:srcCompat="@drawable/b018_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner19"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="19"
+                app:srcCompat="@drawable/b019_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner20"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="20"
+                app:srcCompat="@drawable/b020_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner21"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="21"
+                app:srcCompat="@drawable/b021_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner22"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="22"
+                app:srcCompat="@drawable/b022_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner23"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="23"
+                app:srcCompat="@drawable/b023_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner24"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="24"
+                app:srcCompat="@drawable/b024_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner25"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="25"
+                app:srcCompat="@drawable/b025_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner26"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="26"
+                app:srcCompat="@drawable/b026_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner27"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="27"
+                app:srcCompat="@drawable/b027_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner28"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="28"
+                app:srcCompat="@drawable/b028_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner29"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="29"
+                app:srcCompat="@drawable/b029_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner30"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="30"
+                app:srcCompat="@drawable/b030_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner31"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="31"
+                app:srcCompat="@drawable/b031_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner32"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="32"
+                app:srcCompat="@drawable/b032_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner33"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="33"
+                app:srcCompat="@drawable/b033_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner34"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="34"
+                app:srcCompat="@drawable/b034_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner35"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="35"
+                app:srcCompat="@drawable/b035_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner36"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="36"
+                app:srcCompat="@drawable/b036_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner37"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="37"
+                app:srcCompat="@drawable/b037_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner38"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="38"
+                app:srcCompat="@drawable/b038_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner39"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="39"
+                app:srcCompat="@drawable/b039_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner40"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="40"
+                app:srcCompat="@drawable/b040_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner41"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="41"
+                app:srcCompat="@drawable/b041_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner42"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="42"
+                app:srcCompat="@drawable/b042_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner43"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="43"
+                app:srcCompat="@drawable/b043_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner44"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="44"
+                app:srcCompat="@drawable/b044_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner45"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="45"
+                app:srcCompat="@drawable/b045_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner46"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="46"
+                app:srcCompat="@drawable/b046_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner47"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="47"
+                app:srcCompat="@drawable/b047_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner48"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="48"
+                app:srcCompat="@drawable/b048_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner49"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="49"
+                app:srcCompat="@drawable/b049_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner50"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="50"
+                app:srcCompat="@drawable/b050_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner51"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="51"
+                app:srcCompat="@drawable/b051_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner52"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="52"
+                app:srcCompat="@drawable/b052_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner53"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="53"
+                app:srcCompat="@drawable/b053_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner54"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="54"
+                app:srcCompat="@drawable/b054_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner55"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="55"
+                app:srcCompat="@drawable/b055_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner56"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="56"
+                app:srcCompat="@drawable/b056_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner57"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="57"
+                app:srcCompat="@drawable/b057_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner58"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="58"
+                app:srcCompat="@drawable/b058_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner59"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="59"
+                app:srcCompat="@drawable/b059_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner60"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="60"
+                app:srcCompat="@drawable/b060_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner61"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="61"
+                app:srcCompat="@drawable/b061_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner62"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="62"
+                app:srcCompat="@drawable/b062_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner63"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="63"
+                app:srcCompat="@drawable/b063_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner64"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="64"
+                app:srcCompat="@drawable/b064_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner65"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="65"
+                app:srcCompat="@drawable/b065_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner66"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="66"
+                app:srcCompat="@drawable/b066_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner67"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="67"
+                app:srcCompat="@drawable/b067_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner68"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="68"
+                app:srcCompat="@drawable/b068_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner69"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="69"
+                app:srcCompat="@drawable/b069_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner70"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="70"
+                app:srcCompat="@drawable/b070_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner71"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="71"
+                app:srcCompat="@drawable/b071_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner72"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="72"
+                app:srcCompat="@drawable/b072_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner73"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="73"
+                app:srcCompat="@drawable/b073_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner74"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="74"
+                app:srcCompat="@drawable/b074_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner75"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="75"
+                app:srcCompat="@drawable/b075_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner76"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="76"
+                app:srcCompat="@drawable/b076_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner77"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="77"
+                app:srcCompat="@drawable/b077_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner78"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="78"
+                app:srcCompat="@drawable/b078_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner79"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="79"
+                app:srcCompat="@drawable/b079_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner80"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="80"
+                app:srcCompat="@drawable/b080_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner81"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="81"
+                app:srcCompat="@drawable/b081_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner82"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="82"
+                app:srcCompat="@drawable/b082_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner83"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="83"
+                app:srcCompat="@drawable/b083_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner84"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="84"
+                app:srcCompat="@drawable/b084_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner85"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="85"
+                app:srcCompat="@drawable/b085_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner86"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="86"
+                app:srcCompat="@drawable/b086_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner87"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="87"
+                app:srcCompat="@drawable/b087_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner88"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="88"
+                app:srcCompat="@drawable/b088_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner89"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="89"
+                app:srcCompat="@drawable/b089_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner90"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="90"
+                app:srcCompat="@drawable/b090_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner91"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="91"
+                app:srcCompat="@drawable/b091_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner92"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="92"
+                app:srcCompat="@drawable/b092_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner93"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="93"
+                app:srcCompat="@drawable/b093_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner94"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="94"
+                app:srcCompat="@drawable/b094_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner95"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="95"
+                app:srcCompat="@drawable/b095_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner96"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="96"
+                app:srcCompat="@drawable/b096_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner97"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="97"
+                app:srcCompat="@drawable/b097_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner98"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="98"
+                app:srcCompat="@drawable/b098_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner99"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="99"
+                app:srcCompat="@drawable/b099_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner100"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="100"
+                app:srcCompat="@drawable/b100_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner101"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="101"
+                app:srcCompat="@drawable/b101_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner102"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="102"
+                app:srcCompat="@drawable/b102_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner103"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="103"
+                app:srcCompat="@drawable/b103_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner104"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="104"
+                app:srcCompat="@drawable/b104_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner105"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="105"
+                app:srcCompat="@drawable/b105_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner106"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="106"
+                app:srcCompat="@drawable/b106_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner107"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="107"
+                app:srcCompat="@drawable/b107_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner108"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="108"
+                app:srcCompat="@drawable/b108_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner109"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="109"
+                app:srcCompat="@drawable/b109_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner110"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="110"
+                app:srcCompat="@drawable/b110_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner111"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="111"
+                app:srcCompat="@drawable/b111_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner112"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="112"
+                app:srcCompat="@drawable/b112_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner113"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="113"
+                app:srcCompat="@drawable/b113_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner114"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="114"
+                app:srcCompat="@drawable/b114_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner115"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="115"
+                app:srcCompat="@drawable/b115_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner116"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="116"
+                app:srcCompat="@drawable/b116_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner117"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="117"
+                app:srcCompat="@drawable/b117_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner118"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="118"
+                app:srcCompat="@drawable/b118_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner119"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="119"
+                app:srcCompat="@drawable/b119_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner120"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="120"
+                app:srcCompat="@drawable/b120_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner121"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="121"
+                app:srcCompat="@drawable/b121_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner122"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="122"
+                app:srcCompat="@drawable/b122_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner123"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="123"
+                app:srcCompat="@drawable/b123_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner124"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="124"
+                app:srcCompat="@drawable/b124_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner125"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="125"
+                app:srcCompat="@drawable/b125_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner126"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="126"
+                app:srcCompat="@drawable/b126_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner127"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="127"
+                app:srcCompat="@drawable/b127_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner128"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="128"
+                app:srcCompat="@drawable/b128_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner129"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="129"
+                app:srcCompat="@drawable/b129_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner130"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="130"
+                app:srcCompat="@drawable/b130_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner131"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="131"
+                app:srcCompat="@drawable/b131_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner132"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="132"
+                app:srcCompat="@drawable/b132_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner133"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="133"
+                app:srcCompat="@drawable/b133_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner134"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="134"
+                app:srcCompat="@drawable/b134_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner135"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="135"
+                app:srcCompat="@drawable/b135_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner136"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="136"
+                app:srcCompat="@drawable/b136_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner137"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="137"
+                app:srcCompat="@drawable/b137_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner138"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="138"
+                app:srcCompat="@drawable/b138_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner139"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="139"
+                app:srcCompat="@drawable/b139_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner140"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="140"
+                app:srcCompat="@drawable/b140_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner141"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="141"
+                app:srcCompat="@drawable/b141_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner142"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="142"
+                app:srcCompat="@drawable/b142_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner143"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="143"
+                app:srcCompat="@drawable/b143_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner144"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="144"
+                app:srcCompat="@drawable/b144_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner145"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="145"
+                app:srcCompat="@drawable/b145_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner146"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="146"
+                app:srcCompat="@drawable/b146_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner147"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="147"
+                app:srcCompat="@drawable/b147_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner148"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="148"
+                app:srcCompat="@drawable/b148_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner149"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="149"
+                app:srcCompat="@drawable/b149_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner150"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="150"
+                app:srcCompat="@drawable/b150_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner151"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="151"
+                app:srcCompat="@drawable/b151_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner152"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="152"
+                app:srcCompat="@drawable/b152_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner153"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="153"
+                app:srcCompat="@drawable/b153_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner154"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="154"
+                app:srcCompat="@drawable/b154_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner155"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="155"
+                app:srcCompat="@drawable/b155_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner156"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="156"
+                app:srcCompat="@drawable/b156_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner157"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="157"
+                app:srcCompat="@drawable/b157_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner158"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="158"
+                app:srcCompat="@drawable/b158_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner159"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="159"
+                app:srcCompat="@drawable/b159_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner160"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="160"
+                app:srcCompat="@drawable/b160_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner161"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="161"
+                app:srcCompat="@drawable/b161_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner162"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="162"
+                app:srcCompat="@drawable/b162_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner163"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="163"
+                app:srcCompat="@drawable/b163_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner164"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="164"
+                app:srcCompat="@drawable/b164_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner165"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="165"
+                app:srcCompat="@drawable/b165_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner166"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="166"
+                app:srcCompat="@drawable/b166_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner167"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="167"
+                app:srcCompat="@drawable/b167_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner168"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="168"
+                app:srcCompat="@drawable/b168_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner169"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="169"
+                app:srcCompat="@drawable/b169_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner170"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="170"
+                app:srcCompat="@drawable/b170_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner171"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="171"
+                app:srcCompat="@drawable/b171_scout_banner" />
+
+            <ImageView
+                android:id="@+id/banner172"
+                android:layout_width="355dp"
+                android:layout_height="175dp"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:tag="172"
+                app:srcCompat="@drawable/b172_scout_banner" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

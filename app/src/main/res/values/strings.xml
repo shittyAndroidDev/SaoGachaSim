@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SaoGachaSim</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_storage">Storage</string>
+    <string name="banner">Banner</string>
+    <string name="scout">Scout</string>
+</resources>
