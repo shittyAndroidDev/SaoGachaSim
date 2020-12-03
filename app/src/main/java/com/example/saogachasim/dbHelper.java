@@ -44,11 +44,11 @@ public class dbHelper extends SQLiteOpenHelper {
     }
     public void deleteAll(){
         SQLiteDatabase db = this.getWritableDatabase();
-        String s = "DROP TABLE IF EXISTS " + TABLE_NAME;
+        //String s = "DROP TABLE IF EXISTS " + TABLE_NAME;
         String del = "DELETE FROM " + TABLE_NAME;
         db.execSQL(del);
-        db.execSQL(s);
-        onCreate(db);
+        //db.execSQL(s);
+        //onCreate(db);
     }
     public boolean addData(String th,String full,int star){
         SQLiteDatabase db = this.getWritableDatabase();
@@ -66,7 +66,12 @@ public class dbHelper extends SQLiteOpenHelper {
     }
     public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT * FROM " + TABLE_NAME;
+        String query = "SELECT * FROM " + TABLE_NAME + " ORDER BY " + COL3;
         return db.rawQuery(query,null);
+    }
+    public Cursor contains(String name){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String s = "SELECT " + COL0 + " FROM " + TABLE_NAME +" WHERE " + COL1 + " = '" +name+"'";
+        return db.rawQuery(s,null);
     }
 }

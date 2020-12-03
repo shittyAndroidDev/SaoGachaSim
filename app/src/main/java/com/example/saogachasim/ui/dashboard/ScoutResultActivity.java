@@ -56,11 +56,10 @@ public class ScoutResultActivity extends AppCompatActivity {
         }
     }
     public void AddData(String th, String full, int star){
-        boolean insertData = mdbHelper.addData(th,full,star);
-        if(!insertData){
-            Toast.makeText(this, "fail", Toast.LENGTH_SHORT).show();
-        }else{
-            Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
+        if(mdbHelper.contains(th).moveToFirst()){
+            return;
+        }else {
+            mdbHelper.addData(th, full, star);
         }
     }
 

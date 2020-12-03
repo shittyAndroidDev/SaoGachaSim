@@ -21,7 +21,6 @@ public class StorageFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         storageViewmodel =
-               // ViewModelProviders.of(this).get(StorageViewModel.class);
                 new ViewModel() {
                     @Override
                     protected void onCleared() {
@@ -31,8 +30,7 @@ public class StorageFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.storage, container, false);
         mdbHelper = new dbHelper(getContext());
-       // mdbHelper.deleteAll();
-        //listView = root.findViewById(R.id.lView);
+        //mdbHelper.deleteAll();
         GridView grid;
         grid = root.findViewById(R.id.gridView);
         Cursor data = mdbHelper.getData();
