@@ -1,6 +1,8 @@
 package com.example.saogachasim.ui.dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.saogachasim.Logic;
 import com.example.saogachasim.MainActivity;
 import com.example.saogachasim.R;
 import com.example.saogachasim.dbHelper;
@@ -10,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class ScoutResultActivity extends AppCompatActivity {
-    public static ImageView[] iv = new ImageView[11];
     private static final String TAG = "ScoutResultActivity";
     dbHelper mdbHelper;
 
@@ -23,6 +24,7 @@ public class ScoutResultActivity extends AppCompatActivity {
         if (data == null) {
             return;
         }
+        ImageView[] iv = new ImageView[11];
         iv[0] = findViewById(R.id.scout_slot0);
         iv[1] = findViewById(R.id.scout_slot1);
         iv[2] = findViewById(R.id.scout_slot2);
@@ -36,31 +38,29 @@ public class ScoutResultActivity extends AppCompatActivity {
         iv[10] = findViewById(R.id.scout_slot10);
 
         if (data.getInt("img_tag") == 1){
-            iv[0].setForeground(MainActivity.logic.getImg("s" + (data.getInt("star")) + "_frame", getApplicationContext()));
-            iv[0].setImageDrawable(MainActivity.logic.getImg(data.getStringArray("result")[0], getApplicationContext()));
+            iv[0].setForeground(Logic.getImg("s" + (data.getInt("star")) + "_frame", getApplicationContext()));
+            iv[0].setImageDrawable(Logic.getImg(data.getStringArray("result")[0], getApplicationContext()));
             iv[0].setBackground(getDrawable(R.drawable.unit_bg));
-            AddData(data.getStringArray("result")[0],data.getStringArray("result")[1]);
+            AddData(data.getStringArray("result")[0],data.getStringArray("result")[1],data.getInt("star"));
         }else if(data.getInt("img_tag")==2){
             int[] stars = data.getIntArray("star2");
-            String[] results = data.getStringArray("result2");
+           // String[] results = data.getStringArray("result2");
             for(int i =0;i<11;i++){
                 //int id = getApplicationContext().getResources().getIdentifier(slot,"layout",getApplicationContext().getPackageName());
-                iv[i].setForeground(MainActivity.logic.getImg("s" + stars[i] + "_frame", getApplicationContext()));
-                iv[i].setImageDrawable(MainActivity.logic.getImg(data.getStringArray("result2")[i], getApplicationContext()));
+                iv[i].setForeground(Logic.getImg("s" + stars[i] + "_frame", getApplicationContext()));
+                iv[i].setImageDrawable(Logic.getImg(data.getStringArray("result2")[i], getApplicationContext()));
                 iv[i].setBackground(getDrawable(R.drawable.unit_bg));
-                AddData(data.getStringArray("result2")[i],data.getStringArray("result3")[i]);
+                AddData(data.getStringArray("result2")[i],data.getStringArray("result3")[i],stars[i]);
             }
         }else{
-
         }
-
     }
-    public void AddData(String th, String full){
-        boolean insertData = mdbHelper.addData(th,full);
-        if(insertData == false){
+    public void AddData(String th, String full, int star){
+        boolean insertData = mdbHelper.addData(th,full,star);
+        if(!insertData){
             Toast.makeText(this, "fail", Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this, "succes", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
         }
     }
 

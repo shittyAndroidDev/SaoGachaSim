@@ -4,8 +4,6 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.Pair;
 
-import com.example.saogachasim.ui.home.HomeFragment;
-
 public class Logic {
 
 
@@ -40,7 +38,7 @@ public class Logic {
                 int[] set ={-1,2,ch};
                 return set;
             }
-        }else if(33<=bannerNum && bannerNum<=79){  //TODO: 5star banner scout
+        }else if(33<=bannerNum && bannerNum<=79){
             if(roll<=0.03){
                 int ch = (int)(Math.random()*(max+0.99));
                 int[] set ={bannerNum,5,ch};
@@ -78,7 +76,7 @@ public class Logic {
 
     }
 
-    public Pair<String,String> constructName(int[] data){
+    public static Pair<String,String> constructName(int[] data){
         String fullImage=null;
         String thumbnail=null;
 
@@ -110,7 +108,7 @@ public class Logic {
         }
         return new Pair<String,String>(thumbnail,fullImage);
     }
-    public String getBanner(int bannerNum){
+    public static String getBanner(int bannerNum){
         String s;
         if(bannerNum<10){
             s="b00";
@@ -122,7 +120,7 @@ public class Logic {
         return s+bannerNum+"_scout_top";
     }
 
-    public Drawable getImg(String name, Context context){
+    public static Drawable getImg(String name, Context context){
         int id = context.getResources().getIdentifier(name,"drawable",context.getPackageName());
         return context.getResources().getDrawable(id,null);
     }
