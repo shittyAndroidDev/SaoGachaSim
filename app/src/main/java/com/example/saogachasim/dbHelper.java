@@ -35,8 +35,6 @@ public class dbHelper extends SQLiteOpenHelper {
         String s = "DROP TABLE IF EXISTS " + TABLE_NAME;
        /* if (newVersion > oldVersion) {
             db.execSQL("ALTER TABLE "+ TABLE_NAME +" ADD COLUMN "+ COL1 +" TEXT");
-            db.execSQL("ALTER TABLE "+ TABLE_NAME +" ADD COLUMN "+ COL2 +" TEXT");
-            db.execSQL("ALTER TABLE "+ TABLE_NAME +" ADD COLUMN "+ COL3 +" INTEGER");
         }*/
         db.execSQL(s);
         onCreate(db);
@@ -50,19 +48,13 @@ public class dbHelper extends SQLiteOpenHelper {
         //db.execSQL(s);
         //onCreate(db);
     }
-    public boolean addData(String th,String full,int star){
+    public void addData(String th,String full,int star){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
                 contentValues.put(COL1,th);
                 contentValues.put(COL2,full);
                 contentValues.put(COL3,star);
-       //Log.d(TAG,"addData: adding" + th + " to " + TABLE_NAME );
-        long result = db.insert(TABLE_NAME,null,contentValues);
-        if(result == -1){
-            return false;
-        }else {
-            return true;
-        }
+        db.insert(TABLE_NAME,null,contentValues);
     }
     public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();

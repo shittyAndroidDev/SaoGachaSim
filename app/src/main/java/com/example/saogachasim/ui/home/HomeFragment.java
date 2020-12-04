@@ -70,7 +70,6 @@ public class HomeFragment extends Fragment{
         }
     };
 
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -84,10 +83,8 @@ public class HomeFragment extends Fragment{
         scout2 = root.findViewById(R.id.scout2_img);
         scout2.setOnClickListener(scout2_listen);
 
-
         int bannerNum;
-        if(bannerData.isEmpty()){
-        }else{
+        if(!bannerData.isEmpty()){
             bannerNum = bannerData.getInt("bannerNum");
             String name = Logic.getBanner(bannerNum);
             Drawable img = Logic.getImg(name, getContext());

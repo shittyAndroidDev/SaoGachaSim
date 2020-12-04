@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class ScoutResultActivity extends AppCompatActivity {
-    private static final String TAG = "ScoutResultActivity";
     dbHelper mdbHelper;
 
     @Override
@@ -44,23 +43,17 @@ public class ScoutResultActivity extends AppCompatActivity {
             AddData(data.getStringArray("result")[0],data.getStringArray("result")[1],data.getInt("star"));
         }else if(data.getInt("img_tag")==2){
             int[] stars = data.getIntArray("star2");
-           // String[] results = data.getStringArray("result2");
             for(int i =0;i<11;i++){
-                //int id = getApplicationContext().getResources().getIdentifier(slot,"layout",getApplicationContext().getPackageName());
                 iv[i].setForeground(Logic.getImg("s" + stars[i] + "_frame", getApplicationContext()));
                 iv[i].setImageDrawable(Logic.getImg(data.getStringArray("result2")[i], getApplicationContext()));
                 iv[i].setBackground(getDrawable(R.drawable.unit_bg));
                 AddData(data.getStringArray("result2")[i],data.getStringArray("result3")[i],stars[i]);
             }
-        }else{
         }
     }
     public void AddData(String th, String full, int star){
-        if(mdbHelper.contains(th).moveToFirst()){
-            return;
-        }else {
+        if(!mdbHelper.contains(th).moveToFirst()){
             mdbHelper.addData(th, full, star);
         }
     }
-
 }

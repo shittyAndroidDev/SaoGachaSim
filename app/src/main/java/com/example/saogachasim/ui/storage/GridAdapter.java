@@ -1,9 +1,11 @@
 package com.example.saogachasim.ui.storage;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.database.Cursor;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -31,13 +33,11 @@ public class GridAdapter extends BaseAdapter {
             img[1].add(data.getString(2));
             img[2].add(data.getInt(3));
         }
-
     }
     @Override
     public int getCount(){
         return data.getCount();
     }
-
     @Override
     public long getItemId(int pos){
         return 0;
@@ -48,7 +48,6 @@ public class GridAdapter extends BaseAdapter {
     }
     @Override
     public View getView(int position , View convert, ViewGroup parent){
-        //Toast.makeText(mContext, ""+img[2].get(position), Toast.LENGTH_SHORT).show();
         int star = (int)img[2].get(position);
         ImageView imageView = new ImageView(mContext);
         imageView.setForeground(Logic.getImg("s" + star + "_frame",mContext));
@@ -59,12 +58,7 @@ public class GridAdapter extends BaseAdapter {
         imageView.setPadding(12,9,12,4);
         return imageView;
     }
-    public View getViewFull(int position , View convert, ViewGroup parent){
-        ImageView imageView = new ImageView(mContext);
-        imageView.setImageDrawable(Logic.getImg((String)img[1].get(position),mContext));
-        return imageView;
-    }
-    public int getStar(int position){
-        return (int)img[2].get(position);
+    public String getViewFull(int position){
+        return (String)img[1].get(position);
     }
 }
