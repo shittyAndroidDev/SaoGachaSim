@@ -9,6 +9,7 @@ import com.example.saogachasim.dbHelper;
 
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ScoutResultActivity extends AppCompatActivity {
@@ -35,7 +36,8 @@ public class ScoutResultActivity extends AppCompatActivity {
         iv[8] = findViewById(R.id.scout_slot8);
         iv[9] = findViewById(R.id.scout_slot9);
         iv[10] = findViewById(R.id.scout_slot10);
-
+        TextView diamonds = findViewById(R.id.amount_md);
+        //diamonds.setText(""+(data.getInt("diamonds")));
         if (data.getInt("img_tag") == 1){
             iv[0].setForeground(Logic.getImg("s" + (data.getInt("star")) + "_frame", getApplicationContext()));
             iv[0].setImageDrawable(Logic.getImg(data.getStringArray("result")[0], getApplicationContext()));

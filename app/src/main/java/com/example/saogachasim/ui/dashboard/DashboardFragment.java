@@ -34,11 +34,6 @@ public class DashboardFragment extends Fragment {
                 HomeFragment.bannerData.putInt("bannerNum",tag);
             }
         });
-
-
-
-
-
         return root;
     }
 }

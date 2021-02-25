@@ -20,7 +20,7 @@ public class ListViewAdapter extends BaseAdapter {
 
     @Override
     public int getCount(){
-        return 172;
+        return 191;
     }
     @Override
     public long getItemId(int pos){

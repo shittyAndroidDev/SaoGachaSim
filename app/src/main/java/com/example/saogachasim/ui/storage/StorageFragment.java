@@ -33,12 +33,7 @@ public class StorageFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         storageViewmodel =
-                new ViewModel() {
-                    @Override
-                    protected void onCleared() {
-                        super.onCleared();
-                    }
-                };
+                new ViewModel() {@Override protected void onCleared() { super.onCleared(); }};
 
         final View root = inflater.inflate(R.layout.storage, container, false);
         dbHelper mdbHelper = new dbHelper(getContext());
@@ -70,10 +65,7 @@ public class StorageFragment extends Fragment {
                     builder.show();
             }
         });
-
-
         return root;
-
     }
 
 }

@@ -7,8 +7,7 @@ import android.util.Pair;
 public class Logic {
 
 
-    public Logic(){
-
+    private Logic(){
     }
     public static int[] scout(int bannerNum, int max){
         double roll = Math.random();

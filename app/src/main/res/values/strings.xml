@@ -6,4 +6,5 @@
     <string name="title_storage">Storage</string>
     <string name="banner">Banner</string>
     <string name="scout">Scout</string>
+    <string name="md_key">MD</string>
 </resources>
