@@ -2,6 +2,7 @@ package com.example.saogachasim.ui.dashboard;
 
 import android.content.Context;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.saogachasim.Logic;
+import com.example.saogachasim.R;
 
 public class ListViewAdapter extends BaseAdapter {
 
@@ -45,6 +47,7 @@ public class ListViewAdapter extends BaseAdapter {
         imageView.setTag(position+1);
         imageView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 555));
         Log.e("not found",""+s);
+
         return imageView;
     }
 
