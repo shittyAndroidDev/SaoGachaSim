@@ -3,15 +3,19 @@ package com.example.saogachasim;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import com.example.saogachasim.ui.home.HomeFragment;
+import com.example.saogachasim.ui.storage.AppDatabase;
+import com.example.saogachasim.ui.storage.StorageFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.room.Room;
 
 public class MainActivity extends AppCompatActivity {
     public static int[] m;

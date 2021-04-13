@@ -14,24 +14,27 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.saogachasim.Logic;
 import com.example.saogachasim.MainActivity;
 import com.example.saogachasim.R;
 import com.example.saogachasim.ui.dashboard.ScoutResultActivity;
+import com.example.saogachasim.ui.storage.StorageViewModel;
+import com.example.saogachasim.ui.storage.UnitEntity;
 
 public class HomeFragment extends Fragment{
 
-    private HomeViewModel homeViewModel;
-
     public static Bundle bannerData = new Bundle();
     private static int md_amount;
+    public static final int NEW_UNIT_REQUEST_CODE = 1;
+    StorageViewModel storageViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
+        storageViewModel =
+                new ViewModelProvider(requireActivity()).get(StorageViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         final SharedPreferences sharedPreferences = getActivity().getPreferences(Context.MODE_PRIVATE);
@@ -51,61 +54,55 @@ public class HomeFragment extends Fragment{
             ImageView imgView = root.findViewById(R.id.bannerView);
             imgView.setImageDrawable(img);
         }
-        View.OnClickListener scout2_listen = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int bannerNum = bannerData.getInt("bannerNum");
-                if(bannerNum==0){
-                    return;
-                }
-                Intent i = new Intent(getActivity(), ScoutResultActivity.class);
-                int[] star_level = new int[11];
-                String[] result0 = new String[11];
-                String[] result1 = new String[11];
-                for(int j= 0;j<11;j++){
-                    int[] chData = Logic.scout(bannerNum, MainActivity.m[bannerNum]);
-                    star_level[j]=chData[1];
-                    Pair<String,String> resname = Logic.constructName(chData);
-                    result0[j] = resname.first;
-                    result1[j] = resname.second;
-                }
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                md_amount+=250;
-                editor.putInt(getString(R.string.md_key), md_amount);
-                editor.apply();
-                i.putExtra("star2",star_level);
-                i.putExtra("result2",result0);
-                i.putExtra("result3",result1);
-                i.putExtra("diamonds", md_amount);
-                String tag = (String)v.getTag();
-                int imgTag = Integer.parseInt(tag);
-                i.putExtra("img_tag",imgTag);
-                startActivity(i);
+        View.OnClickListener scout2_listen = v -> {
+            int bannerNum1 = bannerData.getInt("bannerNum");
+            if(bannerNum1 ==0){
+                return;
             }
-        };
-        View.OnClickListener scout1_listen = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int bannerNum = bannerData.getInt("bannerNum");
-                if(bannerNum==0){
-                    return;
-                }
-                int[] chData = Logic.scout(bannerNum, MainActivity.m[bannerNum]);
+            Intent i = new Intent(getActivity(), ScoutResultActivity.class);
+            int[] star_level = new int[11];
+            String[] result0 = new String[11];
+            String[] result1 = new String[11];
+            for(int j= 0;j<11;j++){
+                int[] chData = Logic.scout(bannerNum1, MainActivity.m[bannerNum1]);
+                star_level[j]=chData[1];
                 Pair<String,String> resname = Logic.constructName(chData);
-                Intent i = new Intent(getActivity(), ScoutResultActivity.class);
-                String[] resultData ={resname.first,resname.second};
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                md_amount+=25;
-                editor.putInt(getString(R.string.md_key), md_amount);
-                editor.apply();
-                i.putExtra("result",resultData);
-                i.putExtra("star",chData[1]);
-                i.putExtra("diamonds", md_amount);
-                String tag = (String)v.getTag();
-                int imgTag = Integer.parseInt(tag);
-                i.putExtra("img_tag",imgTag);
-                startActivity(i);
+                result0[j] = resname.first;
+                result1[j] = resname.second;
             }
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            md_amount+=250;
+            editor.putInt(getString(R.string.md_key), md_amount);
+            editor.apply();
+            i.putExtra("star2",star_level);
+            i.putExtra("result2",result0);
+            i.putExtra("result3",result1);
+            i.putExtra("diamonds", md_amount);
+            String tag = (String)v.getTag();
+            int imgTag = Integer.parseInt(tag);
+            i.putExtra("img_tag",imgTag);
+            startActivityForResult(i, NEW_UNIT_REQUEST_CODE);
+        };
+        View.OnClickListener scout1_listen = v -> {
+            int bannerNum12 = bannerData.getInt("bannerNum");
+            if(bannerNum12 ==0){
+                return;
+            }
+            int[] chData = Logic.scout(bannerNum12, MainActivity.m[bannerNum12]);
+            Pair<String,String> resname = Logic.constructName(chData);
+            Intent i = new Intent(getActivity(), ScoutResultActivity.class);
+            String[] resultData ={resname.first,resname.second};
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            md_amount+=25;
+            editor.putInt(getString(R.string.md_key), md_amount);
+            editor.apply();
+            i.putExtra("result",resultData);
+            i.putExtra("star",chData[1]);
+            i.putExtra("diamonds", md_amount);
+            String tag = (String)v.getTag();
+            int imgTag = Integer.parseInt(tag);
+            i.putExtra("img_tag",imgTag);
+            startActivityForResult(i, NEW_UNIT_REQUEST_CODE);
         };
         scout1.setOnClickListener(scout1_listen);
         scout2.setOnClickListener(scout2_listen);
@@ -113,4 +110,18 @@ public class HomeFragment extends Fragment{
 
         return root;
     }
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == NEW_UNIT_REQUEST_CODE && resultCode == -1){
+            if(!data.getBooleanExtra("multi",false)){
+                UnitEntity in = (UnitEntity) data.getSerializableExtra("unit");
+                storageViewModel.insert(in);
+            }else{
+                UnitEntity[] in = (UnitEntity[]) data.getSerializableExtra("units");
+                storageViewModel.insert(in);
+            }
+        }
+
+    }
+
 }

@@ -1,26 +1,39 @@
 package com.example.saogachasim.ui.dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProviders;
 
 import com.example.saogachasim.Logic;
 import com.example.saogachasim.MainActivity;
 import com.example.saogachasim.R;
 import com.example.saogachasim.dbHelper;
+import com.example.saogachasim.ui.storage.AppDatabase;
+import com.example.saogachasim.ui.storage.StorageViewModel;
+import com.example.saogachasim.ui.storage.UnitEntity;
 
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+
 public class ScoutResultActivity extends AppCompatActivity {
-    dbHelper mdbHelper;
+    //dbHelper mdbHelper;
+    public static final String EXTRA_REPLY =
+            "com.example.saogachasim.ui.home.REPLY";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scout_result);
         Bundle data = getIntent().getExtras();
-        mdbHelper = new dbHelper(this);
+        //mdbHelper = new dbHelper(this);
         if (data == null) {
             return;
         }
@@ -42,20 +55,25 @@ public class ScoutResultActivity extends AppCompatActivity {
             iv[0].setForeground(Logic.getImg("s" + (data.getInt("star")) + "_frame", getApplicationContext()));
             iv[0].setImageDrawable(Logic.getImg(data.getStringArray("result")[0], getApplicationContext()));
             iv[0].setBackground(getDrawable(R.drawable.unit_bg));
-            AddData(data.getStringArray("result")[0],data.getStringArray("result")[1],data.getInt("star"));
+            Intent replyIntent = new Intent();
+            UnitEntity unit = new UnitEntity(data.getStringArray("result")[0],data.getStringArray("result")[1],data.getInt("star"));
+            replyIntent.putExtra("unit",unit);
+            replyIntent.putExtra("multi",false);
+            setResult(RESULT_OK,replyIntent);
         }else if(data.getInt("img_tag")==2){
             int[] stars = data.getIntArray("star2");
-            for(int i =0;i<11;i++){
+            UnitEntity[] unitEntities = new UnitEntity[11];
+            for(int i = 0;i<11;i++){
                 iv[i].setForeground(Logic.getImg("s" + stars[i] + "_frame", getApplicationContext()));
                 iv[i].setImageDrawable(Logic.getImg(data.getStringArray("result2")[i], getApplicationContext()));
                 iv[i].setBackground(getDrawable(R.drawable.unit_bg));
-                AddData(data.getStringArray("result2")[i],data.getStringArray("result3")[i],stars[i]);
+                unitEntities[i] = (new UnitEntity(data.getStringArray("result2")[i],data.getStringArray("result3")[i],stars[i]));
             }
+            Intent replyIntent = new Intent();
+            replyIntent.putExtra("units",unitEntities);
+            replyIntent.putExtra("multi",true);
+            setResult(RESULT_OK,replyIntent);
         }
     }
-    public void AddData(String th, String full, int star){
-        if(!mdbHelper.contains(th).moveToFirst()){
-            mdbHelper.addData(th, full, star);
-        }
-    }
+
 }

@@ -105,6 +105,16 @@ public class Logic {
         return s+bannerNum+"_scout_top";
     }
 
+    public static String getScoutBanner(int bannerNum){
+        String s;
+        if(bannerNum<10){
+            s="b00";
+        }else if(bannerNum>=100){
+            s="b";
+        }else s = "b0";
+        return s+bannerNum+"_scout_banner";
+    }
+
     public static Drawable getImg(String name, Context context){
         int id = context.getResources().getIdentifier(name,"drawable",context.getPackageName());
         return context.getResources().getDrawable(id,null);
